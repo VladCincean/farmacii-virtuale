@@ -1,0 +1,5 @@
+Nora Mork|NOR|Larvik|83
+Isabelle Gullden|SWE|CSM Bucurest|80
+Cristina Neagu|ROU|Buducnost|63
+Allison Pineau|FRA|HCM Baia Mare|82
+Ilina Ekaterina|RUS|Rostov-Don|80
