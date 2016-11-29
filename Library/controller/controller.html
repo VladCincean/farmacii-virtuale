@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module controller</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>controller</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Ccs%5Cpython%5Clibrary%5Ccontroller%5Ccontroller.py">d:\cs\python\library\controller\controller.py</a></font></td></tr></table>
+    <p><tt>Created&nbsp;on&nbsp;4&nbsp;nov.&nbsp;2015<br>
+&nbsp;<br>
+@author:&nbsp;Vlad</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="controller.html#Controller">Controller</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="controller.html#BookController">BookController</a>
+</font></dt><dt><font face="helvetica, arial"><a href="controller.html#ClientController">ClientController</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="controller.html#RentalController">RentalController</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="BookController">class <strong>BookController</strong></a>(<a href="controller.html#Controller">Controller</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="controller.html#BookController">BookController</a></dd>
+<dd><a href="controller.html#Controller">Controller</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="BookController-getByAuthor"><strong>getByAuthor</strong></a>(self, author)</dt><dd><tt>Returns&nbsp;the&nbsp;books&nbsp;having&nbsp;the&nbsp;given&nbsp;title<br>
+Input:&nbsp;author&nbsp;(string)<br>
+Output:&nbsp;res&nbsp;(list&nbsp;of&nbsp;Books),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="BookController-getByTitle"><strong>getByTitle</strong></a>(self, title)</dt><dd><tt>Returns&nbsp;the&nbsp;books&nbsp;having&nbsp;the&nbsp;given&nbsp;title<br>
+Input:&nbsp;title&nbsp;(string)<br>
+Output:&nbsp;res&nbsp;(list&nbsp;of&nbsp;Books),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="controller.html#Controller">Controller</a>:<br>
+<dl><dt><a name="BookController-__init__"><strong>__init__</strong></a>(self, repo)</dt><dd><tt>Constructor&nbsp;for&nbsp;<a href="#BookController">BookController</a>&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="BookController-add"><strong>add</strong></a>(self, entity)</dt><dd><tt>Adds&nbsp;a&nbsp;entity<br>
+Input:&nbsp;entity&nbsp;(Object)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;duplicated&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="BookController-getAll"><strong>getAll</strong></a>(self)</dt><dd><tt>Returns&nbsp;all&nbsp;the&nbsp;repository's&nbsp;data</tt></dd></dl>
+
+<dl><dt><a name="BookController-getById"><strong>getById</strong></a>(self, ID)</dt><dd><tt>Returns&nbsp;the&nbsp;entity&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Output:&nbsp;entity&nbsp;(Object),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="BookController-remove"><strong>remove</strong></a>(self, ID)</dt><dd><tt>Removes&nbsp;the&nbsp;entity&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;the&nbsp;given&nbsp;ID&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+
+<dl><dt><a name="BookController-update"><strong>update</strong></a>(self, entity)</dt><dd><tt>Updates&nbsp;an&nbsp;entity<br>
+Input:&nbsp;entity&nbsp;(Object)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;not&nbsp;updating</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="controller.html#Controller">Controller</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ClientController">class <strong>ClientController</strong></a>(<a href="controller.html#Controller">Controller</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="controller.html#ClientController">ClientController</a></dd>
+<dd><a href="controller.html#Controller">Controller</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ClientController-getByBookRented"><strong>getByBookRented</strong></a>(self, book_id)</dt><dd><tt>Returns&nbsp;the&nbsp;client&nbsp;that&nbsp;have&nbsp;rented&nbsp;a&nbsp;given&nbsp;book<br>
+Input:&nbsp;book_id&nbsp;(integer)<br>
+Output:&nbsp;c&nbsp;(Client),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="ClientController-getByCNP"><strong>getByCNP</strong></a>(self, CNP)</dt><dd><tt>Returns&nbsp;the&nbsp;clients&nbsp;having&nbsp;the&nbsp;given&nbsp;CNP<br>
+Input:&nbsp;CNP&nbsp;(integer)<br>
+Output:&nbsp;res&nbsp;(list&nbsp;of&nbsp;Clients),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="ClientController-getByName"><strong>getByName</strong></a>(self, name)</dt><dd><tt>Returns&nbsp;the&nbsp;clients&nbsp;having&nbsp;the&nbsp;given&nbsp;name<br>
+Input:&nbsp;name&nbsp;(string)<br>
+Output:&nbsp;res&nbsp;(list&nbsp;of&nbsp;Clients),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="controller.html#Controller">Controller</a>:<br>
+<dl><dt><a name="ClientController-__init__"><strong>__init__</strong></a>(self, repo)</dt><dd><tt>Constructor&nbsp;for&nbsp;<a href="#BookController">BookController</a>&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="ClientController-add"><strong>add</strong></a>(self, entity)</dt><dd><tt>Adds&nbsp;a&nbsp;entity<br>
+Input:&nbsp;entity&nbsp;(Object)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;duplicated&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="ClientController-getAll"><strong>getAll</strong></a>(self)</dt><dd><tt>Returns&nbsp;all&nbsp;the&nbsp;repository's&nbsp;data</tt></dd></dl>
+
+<dl><dt><a name="ClientController-getById"><strong>getById</strong></a>(self, ID)</dt><dd><tt>Returns&nbsp;the&nbsp;entity&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Output:&nbsp;entity&nbsp;(Object),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="ClientController-remove"><strong>remove</strong></a>(self, ID)</dt><dd><tt>Removes&nbsp;the&nbsp;entity&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;the&nbsp;given&nbsp;ID&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+
+<dl><dt><a name="ClientController-update"><strong>update</strong></a>(self, entity)</dt><dd><tt>Updates&nbsp;an&nbsp;entity<br>
+Input:&nbsp;entity&nbsp;(Object)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;not&nbsp;updating</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="controller.html#Controller">Controller</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Controller">class <strong>Controller</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>classdocs<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Controller-__init__"><strong>__init__</strong></a>(self, repo)</dt><dd><tt>Constructor&nbsp;for&nbsp;<a href="#BookController">BookController</a>&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="Controller-add"><strong>add</strong></a>(self, entity)</dt><dd><tt>Adds&nbsp;a&nbsp;entity<br>
+Input:&nbsp;entity&nbsp;(Object)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;duplicated&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="Controller-getAll"><strong>getAll</strong></a>(self)</dt><dd><tt>Returns&nbsp;all&nbsp;the&nbsp;repository's&nbsp;data</tt></dd></dl>
+
+<dl><dt><a name="Controller-getById"><strong>getById</strong></a>(self, ID)</dt><dd><tt>Returns&nbsp;the&nbsp;entity&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Output:&nbsp;entity&nbsp;(Object),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="Controller-remove"><strong>remove</strong></a>(self, ID)</dt><dd><tt>Removes&nbsp;the&nbsp;entity&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;the&nbsp;given&nbsp;ID&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+
+<dl><dt><a name="Controller-update"><strong>update</strong></a>(self, entity)</dt><dd><tt>Updates&nbsp;an&nbsp;entity<br>
+Input:&nbsp;entity&nbsp;(Object)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;not&nbsp;updating</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RentalController">class <strong>RentalController</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="RentalController-__init__"><strong>__init__</strong></a>(self, cRepo, bRepo)</dt><dd><tt>Constructor&nbsp;for&nbsp;<a href="#RentalController">RentalController</a>&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="RentalController-add"><strong>add</strong></a>(self, book, client)</dt><dd><tt>Adds&nbsp;a&nbsp;book&nbsp;to&nbsp;the&nbsp;client's&nbsp;rental&nbsp;list<br>
+Input:&nbsp;book&nbsp;(Book)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;client&nbsp;(Client)<br>
+Raises&nbsp;Exception&nbsp;in&nbsp;case&nbsp;of&nbsp;the&nbsp;selected&nbsp;book&nbsp;is&nbsp;already&nbsp;rented</tt></dd></dl>
+
+<dl><dt><a name="RentalController-remove"><strong>remove</strong></a>(self, book, client)</dt><dd><tt>Removes&nbsp;a&nbsp;book&nbsp;from&nbsp;the&nbsp;client's&nbsp;rental&nbsp;list<br>
+Input:&nbsp;book&nbsp;(Book)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;client&nbsp;(Client)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;the&nbsp;selected&nbsp;book&nbsp;was&nbsp;not&nbsp;rented&nbsp;by&nbsp;the&nbsp;selected&nbsp;client</tt></dd></dl>
+
+<dl><dt><a name="RentalController-str_rentalList"><strong>str_rentalList</strong></a>(self, client)</dt><dd><tt>Prints&nbsp;the&nbsp;books&nbsp;rented&nbsp;by&nbsp;the&nbsp;given&nbsp;client<br>
+Input:&nbsp;client&nbsp;(Client)<br>
+Output:&nbsp;s&nbsp;(string)&nbsp;-&nbsp;the&nbsp;formated&nbsp;client's&nbsp;rental&nbsp;list,&nbsp;if&nbsp;it&nbsp;is&nbsp;not&nbsp;empty<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

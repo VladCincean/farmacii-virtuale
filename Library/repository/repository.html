@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module repository</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>repository</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Ccs%5Cpython%5Clibrary%5Crepository%5Crepository.py">d:\cs\python\library\repository\repository.py</a></font></td></tr></table>
+    <p><tt>Created&nbsp;on&nbsp;10&nbsp;nov.&nbsp;2015<br>
+&nbsp;<br>
+@author:&nbsp;Vlad</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="repository.html#Repository">Repository</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="repository.html#BookRepository">BookRepository</a>
+</font></dt><dt><font face="helvetica, arial"><a href="repository.html#ClientRepository">ClientRepository</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="BookRepository">class <strong>BookRepository</strong></a>(<a href="repository.html#Repository">Repository</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="repository.html#BookRepository">BookRepository</a></dd>
+<dd><a href="repository.html#Repository">Repository</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="BookRepository-getByAuthor"><strong>getByAuthor</strong></a>(self, author)</dt><dd><tt>Returns&nbsp;the&nbsp;books&nbsp;having&nbsp;the&nbsp;given&nbsp;author&nbsp;(no&nbsp;case&nbsp;sensitive)<br>
+Input:&nbsp;author&nbsp;(string)<br>
+Output:&nbsp;res&nbsp;(list&nbsp;of&nbsp;Books),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="BookRepository-getByTitle"><strong>getByTitle</strong></a>(self, title)</dt><dd><tt>Returns&nbsp;the&nbsp;books&nbsp;having&nbsp;the&nbsp;given&nbsp;title&nbsp;(no&nbsp;case&nbsp;sensitive)<br>
+Input:&nbsp;title&nbsp;(string)<br>
+Output:&nbsp;res&nbsp;(list&nbsp;of&nbsp;Books),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="repository.html#Repository">Repository</a>:<br>
+<dl><dt><a name="BookRepository-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Constructor&nbsp;for&nbsp;<a href="#Repository">Repository</a>&nbsp;Class</tt></dd></dl>
+
+<dl><dt><a name="BookRepository-__len__"><strong>__len__</strong></a>(self)</dt><dd><tt>Overrides&nbsp;the&nbsp;len()&nbsp;built-in&nbsp;function</tt></dd></dl>
+
+<dl><dt><a name="BookRepository-add"><strong>add</strong></a>(self, entry)</dt><dd><tt>Adds&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;the&nbsp;repository<br>
+Input:&nbsp;entry&nbsp;(<a href="builtins.html#object">object</a>)<br>
+Raises&nbsp;KeyError&nbsp;in&nbsp;case&nbsp;of&nbsp;duplicated&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="BookRepository-getAll"><strong>getAll</strong></a>(self)</dt><dd><tt>Returns&nbsp;all&nbsp;the&nbsp;repository's&nbsp;data</tt></dd></dl>
+
+<dl><dt><a name="BookRepository-getById"><strong>getById</strong></a>(self, ID)</dt><dd><tt>Returns&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Output:&nbsp;<a href="builtins.html#object">object</a>&nbsp;(<a href="builtins.html#object">object</a>),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="BookRepository-remove"><strong>remove</strong></a>(self, ID)</dt><dd><tt>Removes&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;having&nbsp;the&nbsp;given&nbsp;ID&nbsp;from&nbsp;the&nbsp;repository<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Raises&nbsp;KeyError&nbsp;in&nbsp;case&nbsp;the&nbsp;given&nbsp;ID&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+
+<dl><dt><a name="BookRepository-removeAll"><strong>removeAll</strong></a>(self)</dt><dd><tt>Removes&nbsp;all&nbsp;data&nbsp;from&nbsp;the&nbsp;repository</tt></dd></dl>
+
+<dl><dt><a name="BookRepository-update"><strong>update</strong></a>(self, obj)</dt><dd><tt>Updates&nbsp;an&nbsp;<a href="builtins.html#object">object</a><br>
+Input:&nbsp;obj&nbsp;(<a href="builtins.html#object">object</a>)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;not&nbsp;updating</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="repository.html#Repository">Repository</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ClientRepository">class <strong>ClientRepository</strong></a>(<a href="repository.html#Repository">Repository</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="repository.html#ClientRepository">ClientRepository</a></dd>
+<dd><a href="repository.html#Repository">Repository</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ClientRepository-getByBookRented"><strong>getByBookRented</strong></a>(self, book_id)</dt><dd><tt>Returns&nbsp;the&nbsp;client&nbsp;that&nbsp;have&nbsp;rented&nbsp;a&nbsp;given&nbsp;book<br>
+Input:&nbsp;book_id&nbsp;(integer)<br>
+Output:&nbsp;c&nbsp;(Client),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-getByCNP"><strong>getByCNP</strong></a>(self, CNP='')</dt><dd><tt>Returns&nbsp;the&nbsp;clients&nbsp;having&nbsp;the&nbsp;given&nbsp;CNP<br>
+Input:&nbsp;CNP&nbsp;(string)<br>
+Output:&nbsp;res&nbsp;(list&nbsp;of&nbsp;Clients),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-getByName"><strong>getByName</strong></a>(self, name)</dt><dd><tt>Returns&nbsp;the&nbsp;clients&nbsp;having&nbsp;the&nbsp;given&nbsp;name&nbsp;(no&nbsp;case&nbsp;sensitive)<br>
+Input:&nbsp;name&nbsp;(string)<br>
+Output:&nbsp;res&nbsp;(list&nbsp;of&nbsp;Clients),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="repository.html#Repository">Repository</a>:<br>
+<dl><dt><a name="ClientRepository-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Constructor&nbsp;for&nbsp;<a href="#Repository">Repository</a>&nbsp;Class</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-__len__"><strong>__len__</strong></a>(self)</dt><dd><tt>Overrides&nbsp;the&nbsp;len()&nbsp;built-in&nbsp;function</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-add"><strong>add</strong></a>(self, entry)</dt><dd><tt>Adds&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;the&nbsp;repository<br>
+Input:&nbsp;entry&nbsp;(<a href="builtins.html#object">object</a>)<br>
+Raises&nbsp;KeyError&nbsp;in&nbsp;case&nbsp;of&nbsp;duplicated&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-getAll"><strong>getAll</strong></a>(self)</dt><dd><tt>Returns&nbsp;all&nbsp;the&nbsp;repository's&nbsp;data</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-getById"><strong>getById</strong></a>(self, ID)</dt><dd><tt>Returns&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Output:&nbsp;<a href="builtins.html#object">object</a>&nbsp;(<a href="builtins.html#object">object</a>),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-remove"><strong>remove</strong></a>(self, ID)</dt><dd><tt>Removes&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;having&nbsp;the&nbsp;given&nbsp;ID&nbsp;from&nbsp;the&nbsp;repository<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Raises&nbsp;KeyError&nbsp;in&nbsp;case&nbsp;the&nbsp;given&nbsp;ID&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-removeAll"><strong>removeAll</strong></a>(self)</dt><dd><tt>Removes&nbsp;all&nbsp;data&nbsp;from&nbsp;the&nbsp;repository</tt></dd></dl>
+
+<dl><dt><a name="ClientRepository-update"><strong>update</strong></a>(self, obj)</dt><dd><tt>Updates&nbsp;an&nbsp;<a href="builtins.html#object">object</a><br>
+Input:&nbsp;obj&nbsp;(<a href="builtins.html#object">object</a>)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;not&nbsp;updating</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="repository.html#Repository">Repository</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Repository">class <strong>Repository</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>classdocs<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Repository-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Constructor&nbsp;for&nbsp;<a href="#Repository">Repository</a>&nbsp;Class</tt></dd></dl>
+
+<dl><dt><a name="Repository-__len__"><strong>__len__</strong></a>(self)</dt><dd><tt>Overrides&nbsp;the&nbsp;len()&nbsp;built-in&nbsp;function</tt></dd></dl>
+
+<dl><dt><a name="Repository-add"><strong>add</strong></a>(self, entry)</dt><dd><tt>Adds&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;the&nbsp;repository<br>
+Input:&nbsp;entry&nbsp;(<a href="builtins.html#object">object</a>)<br>
+Raises&nbsp;KeyError&nbsp;in&nbsp;case&nbsp;of&nbsp;duplicated&nbsp;id</tt></dd></dl>
+
+<dl><dt><a name="Repository-getAll"><strong>getAll</strong></a>(self)</dt><dd><tt>Returns&nbsp;all&nbsp;the&nbsp;repository's&nbsp;data</tt></dd></dl>
+
+<dl><dt><a name="Repository-getById"><strong>getById</strong></a>(self, ID)</dt><dd><tt>Returns&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;having&nbsp;the&nbsp;given&nbsp;ID<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Output:&nbsp;<a href="builtins.html#object">object</a>&nbsp;(<a href="builtins.html#object">object</a>),&nbsp;if&nbsp;found<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None,&nbsp;otherwise</tt></dd></dl>
+
+<dl><dt><a name="Repository-remove"><strong>remove</strong></a>(self, ID)</dt><dd><tt>Removes&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;having&nbsp;the&nbsp;given&nbsp;ID&nbsp;from&nbsp;the&nbsp;repository<br>
+Input:&nbsp;ID&nbsp;(integer)<br>
+Raises&nbsp;KeyError&nbsp;in&nbsp;case&nbsp;the&nbsp;given&nbsp;ID&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+
+<dl><dt><a name="Repository-removeAll"><strong>removeAll</strong></a>(self)</dt><dd><tt>Removes&nbsp;all&nbsp;data&nbsp;from&nbsp;the&nbsp;repository</tt></dd></dl>
+
+<dl><dt><a name="Repository-update"><strong>update</strong></a>(self, obj)</dt><dd><tt>Updates&nbsp;an&nbsp;<a href="builtins.html#object">object</a><br>
+Input:&nbsp;obj&nbsp;(<a href="builtins.html#object">object</a>)<br>
+Raises&nbsp;exception&nbsp;in&nbsp;case&nbsp;of&nbsp;not&nbsp;updating</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

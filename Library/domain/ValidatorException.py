@@ -1,0 +1,21 @@
+'''
+Created on 21 nov. 2015
+
+@author: Vlad
+'''
+
+class ValidatorException(Exception):
+    '''
+    classdocs
+    '''
+
+    def __init__(self, messageList=["Validation error!"]):
+        self._messageList = messageList
+    def getMessage(self):
+        return self._messageList
+    def __str__(self):
+        result = ""
+        for message in self.getMessage():
+            result += message + "\n"
+        return result
+        
