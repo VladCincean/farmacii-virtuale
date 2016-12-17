@@ -1,1 +1,1 @@
-# farmacii-virtuale
+# Faculty homework + projects
