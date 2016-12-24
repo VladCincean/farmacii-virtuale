@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Part 2">
+      <UniqueIdentifier>{6769f1d1-84e2-4e89-a48d-2f0f30ac5f6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Part 1">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{18445874-1586-4124-9646-e69f2813020a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Output">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ListWithCurrentADT.h">
+      <Filter>Part 1</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicVector.h">
+      <Filter>Part 1</Filter>
+    </ClInclude>
+    <ClInclude Include="DynVectLWCE.h">
+      <Filter>Part 1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests.h">
+      <Filter>Part 1</Filter>
+    </ClInclude>
+    <ClInclude Include="SLList.h">
+      <Filter>Part 1</Filter>
+    </ClInclude>
+    <ClInclude Include="SLListLWCE.h">
+      <Filter>Part 1</Filter>
+    </ClInclude>
+    <ClInclude Include="Balloon.h">
+      <Filter>Part 2</Filter>
+    </ClInclude>
+    <ClInclude Include="BalloonsGame.h">
+      <Filter>Part 2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ball1.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="ball2.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="test1000.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="test10000.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="test100000.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="test10.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="test100.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="SOL_ball1.txt">
+      <Filter>Output</Filter>
+    </Text>
+    <Text Include="SOL_ball2.txt">
+      <Filter>Output</Filter>
+    </Text>
+    <Text Include="SOL_test10.txt">
+      <Filter>Output</Filter>
+    </Text>
+    <Text Include="SOL_test100.txt">
+      <Filter>Output</Filter>
+    </Text>
+    <Text Include="SOL_test1000.txt">
+      <Filter>Output</Filter>
+    </Text>
+    <Text Include="SOL_test10000.txt">
+      <Filter>Output</Filter>
+    </Text>
+    <Text Include="SOL_test100000.txt">
+      <Filter>Output</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+Arrow no. 1 found at coord. 3
+Arrow no. 2 found at coord. 8
+Arrow no. 3 found at coord. 14
