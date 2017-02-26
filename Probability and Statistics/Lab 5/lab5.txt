@@ -1,0 +1,4 @@
+Numerical Characteristics of Random Variables
+---------------------------------------------
+Mean		E(X)
+Variance	V(X)

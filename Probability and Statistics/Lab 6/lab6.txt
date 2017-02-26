@@ -1,0 +1,9 @@
+Statistics Toolbox
+------------------
+rnd - randon nr generator
+---
+
+<dist_name>rnd(param, m, n) % m x n
+
+binornd(3, 0.5, 1, 100)
+unifrnd(2, 3, 1000, 1)

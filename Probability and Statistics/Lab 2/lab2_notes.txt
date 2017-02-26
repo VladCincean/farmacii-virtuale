@@ -1,0 +1,124 @@
+Grafice
+-------
+
+plot
+
+help plot
+
+plot(x,y) % x,y same length
+
+plot(x, y, 'options')
+
+>> x=0:0.1:10;
+>> y=2*x+1;
+>> plot(x,y,'r*:', 'LineWidth', 2)
+
+plot(x1,y1,'opt1')
+  hold onm
+plot(x2,y2,'opt2')
+.......
+
+
+OR
+--
+
+plot(x1,y1,'opt1',x2,y2,'opt2',...)
+
+Ex1
+---
+
+x in [0,3]
+
+x=0:0.01:3
+
+
+clf % sterge ce a fost inainte
+
+after plot
+-----
+title('This is my graph')
+legend('graph1', 'y2', 'f3', 'Location', 'Best')
+					 'BestOutside'
+
+
+---------------------------------------------------------
+
+subplot(m,n,p)
+
+subplot(3,1)
+
+-------
+|  1  |
+-------
+|  2  |
+|     |
+-------
+|  3  |
+-------
+
+subplot(3,1,1);
+   plot(...
+
+subplot(3,1,2);
+   plot(...
+subplot(3,1,3);
+   plot(...
+
+-----------
+
+subplot(2,2)
+
+---------
+|   |   |
+|   |   |
+---------
+|   |   |
+|   |   |
+---------
+
+
+----------------------
+Ex2
+---
+
+    left
+-------------
+
+|---|---|---|---|
+0  0.5  1  1.5  2
+    -------------
+         right
+
+Nr | subint | midp |
+--------------------
+1  | [0,0.5]| 0.25 |
+2  | [0.5,1]| 0.75 |
+........
+
+
+
+>> i =1:5;
+>> a=[i;i+1]
+
+a =
+
+     1     2     3     4     5
+     2     3     4     5     6
+
+>> fprintf('%d \n',a)
+1 
+2 
+2 
+3 
+3 
+4 
+4 
+5 
+5 
+6 
+>> fprintf('%d %d \n',a)
+1 2 
+2 3 
+3 4 
+4 5 
+5 6 
