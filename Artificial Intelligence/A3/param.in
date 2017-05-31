@@ -1,0 +1,4 @@
+probabilityMutation=0.9
+probabilityCrossover=0.9
+noIndividuals=100
+noGenerations=1000

@@ -1,0 +1,254 @@
+body {
+    background-color: #eee;
+}
+
+.top-content {
+    width: 100%;
+    position: fixed;
+    margin-top: -78px;
+    background-color: #eee;
+	z-index: 40;
+}
+
+.top-content .topnav {
+    background-color: #720e9e;
+    overflow: hidden;
+    font-family: serif;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+.top-content .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 3px 15px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.top-content .topnav a:hover {
+    text-decoration: underline;
+    background-color: #550a76;
+}
+
+.top-content .searchbar {
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.top-content .yahoo-logo {
+    font-size: 30px;
+    height: 50px;
+    width: 12.5%;
+    padding-top: 10px;
+    padding-left: 10px;
+    vertical-align: center;
+    display: inline;
+    float: left;
+}
+
+.top-content input#search {
+    display: inline;
+    width: 75%;
+    height: 50px;
+    background: #ffffff;
+    border: none;
+    font-size: 10pt;
+    color: #63717f;
+    padding-left: 25px;
+    border-radius: 6px;
+}
+
+.top-content input#search:focus, input#search:active {
+    outline: none;
+    box-shadow: 5px 5px 2px #888888;
+}
+
+/*-----------------------------------------------*/
+
+.main {
+    margin-top: 85px;
+    background: white;
+}
+
+.main .left-col, .middle-col, .right-col {
+    background: white;
+    border-radius: 8px;
+    display: inline;
+    float: left;
+    height: 100%;
+    margin: 3px;
+}
+
+.main .left-col {
+	position: fixed;
+    width: 15%;
+/*    width: 50% - 250px;*/
+}
+
+.main .middle-col {
+/*    width: 500px;*/
+	margin-left: 16%;
+    width: 60%;
+}
+
+.main .right-col {
+	position: fixed;
+/*    background: blue;*/
+    width: 20%;
+}
+
+#left-list {
+    
+}
+
+#left-list li {
+    display: block;
+    color: #550a76;
+    text-align: left;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+#left-list li a {
+    text-decoration: none;
+}
+
+.middle-col .tohover {
+    height: auto;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    float: left;
+}
+
+.middle-col .big-div {
+    display: inherit;
+}
+
+.middle-col .big-div .big-img {
+/*    float: left;*/
+/*    position: relative;*/
+/*    width: 30%;*/
+    width: 180px;
+}
+
+.middle-col .big-div .big-text {
+    display: inline;
+    float: left;
+    padding: 10px;
+    color: #550a76;
+    text-align: justify;
+}
+
+.middle-col .tohover {
+    float: left;
+}
+
+.tohover img {
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 5px;
+    opacity: 0.5;
+	z-index: -1;
+}
+    
+.tohover img:hover {
+    opacity: 1.0;
+	z-index: -1;
+}
+
+.tohover div {
+    text-align: center;
+}
+
+.middle-col .tab {
+    position: relative;
+    top: 4px;
+    float: left;
+    
+    height: auto;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+
+#t1 {
+    display: none;
+}
+
+#t2 {
+    display: none;
+}
+
+#t3 {
+    display: none;
+}
+
+#h1:hover ~ #t1 {
+    display: block;
+}
+
+#h2:hover ~ #t2 {
+    display: block;
+}
+
+
+#h3:hover ~ #t3 {
+    display: block;
+}
+
+.innerdiv {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.innerdiv img {
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+/*    display: inline;*/
+    float: left;
+}
+
+.innerdiv h1 {
+	color: blue;
+}
+
+.right-col img {
+    width: 100%;
+}
+
+
+#right-list {
+    
+}
+
+#right-list li {
+    display: block;
+    color: #550a76;
+    text-align: left;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+#right-list li a {
+    text-decoration: none;
+}
